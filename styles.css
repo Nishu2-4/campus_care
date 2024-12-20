@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'DM Serif Text', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  margin-right: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #e0f7f7;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 equal columns */
+  gap: 2rem; /* Adds space between columns */
+  align-items: center; /* Vertically center the content */
+}
+
+.left-column {
+  text-align: left;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+}
+
+
+
+.btn-survey {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6b6b;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-survey:hover {
+  background-color: #ff5252;
+}
+
+.privacy-section {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.privacy-section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.privacy-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.role-assign {
+  font-size: 35px;
+  font-weight: 500;
+  color: #4e45d5;
+  font-weight: 800;
+}
+
+.sliding-section {
+  overflow: hidden;
+  margin: 2rem auto;
+  width: 80%; /* Adjust width to control layout */
+  max-width: 1200px; /* Optional for limiting size on larger screens */
+}
+
+.slider-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  animation: slide-horizontal 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 25%; /* Adjust the width of each slide */
+  text-align: center;
+  padding: 1rem;
+}
+
+.circle-placeholder {
+  width: 300px; /* Larger circle */
+  height: 300px; /* Larger circle */
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Only half of the track to loop seamlessly */
+  }
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Increase spacing between icons */
+  margin-top: 10px; /* Adds more space between the name and icons */
+}
+
+.social-icons a {
+  color: #333; /* or any preferred color */
+  font-size: 1.5rem; /* Increase icon size slightly */
+}
+
+.social-icons a:hover {
+  color: #0073b1; /* LinkedIn blue or any hover color */
+}
+

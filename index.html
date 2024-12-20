@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    .hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-column {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust size as needed */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.copyright{
+  margin: 10px 0;
+  font: Inter;
+  font-size: 10px;
+}
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">CampusCare</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href='/static-analytics'>Analytics</a>
+      <a href="#about-us-section">About Us</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="left-column">
+        <h1>For the <span class="role">Students</span>,<br>By the <span class="role">Students</span>
+          <span class="typed-cursor typed-cursor--blink">|</span>
+        </h1>
+        <p>Well-Being Survey for Students.<br>
+          Your voice matters! We are here to understand student life on campus, and we need your input to make a difference.<br><br>
+          Spare us a minute, by filling out the survey
+        </p>
+        <div style="display: flex; justify-content: center;">
+        <a href="https://forms.gle/jZsco7jitoy5aSVP7" target="_blank">
+          <button class="btn-survey">FILL SURVEY</button>
+        </a>
+      </div>
+      <div class="copyright"> &#169;	CSE(DS) Team 6 project</a></div>
+      </div>
+      <div class="right-column"  onclick=`window.location.href='./live-analytics.html';`>
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="./assets/image1.jpg" alt="Slide 1">
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/image2.jpg" alt="Slide 2">
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/image3.jpg" alt="Slide 3">
+            </div>
+            <div class="carousel-slide">
+              <img src="./assets/image4.jpg" alt="Slide 3">
+            </div>
+            <!-- Add more images as necessary -->
+          </div>
+          <button class="carousel-button prev">&#10094;</button>
+          <button class="carousel-button next">&#10095;</button>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="privacy-section">
+    <h2>We respect your privacy!</h2>
+    <p>Inputs are fully anonymous</p>
+  </section>
+
+  <section class="sliding-section" id="about-us-section">
+    <h2 style="text-align: center; margin-bottom: 3rem;font-size: 1.5rem;">Meet the <span class="role-assign">Developers</span></h2>
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slide">
+          <img class="circle-placeholder" src="./assets/nisant.jpg">
+          <p>Nisant Bhardwaj</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vaibhav-kumar" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vaibhav-kumar" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="circle-placeholder" src="./assets/vaibhav.jpg">
+          <p>Vaibhav Kumar</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vaibhav-kumar-34b205257" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Lizpy" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>  
+        <div class="slide">
+          <img class="circle-placeholder" src="./assets/gourav.jpg">
+          <p>Gaurav Chahar</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vaibhav-kumar" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vaibhav-kumar" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="slide">
+          <img class="circle-placeholder" src="./assets/pranav.jpg">
+          <p>Pranav Gupta</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/vaibhav-kumar" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/vaibhav-kumar" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Duplicate slides to create an infinite loop -->
+        <div class="slide">
+          <div class="circle-placeholder"></div>
+          <p>Team Member 1</p>
+        </div>
+        <div class="slide">
+          <div class="circle-placeholder"></div>
+          <p>Team Member 2</p>
+        </div>
+        <div class="slide">
+          <div class="circle-placeholder"></div>
+          <p>Team Member 3</p>
+        </div>
+        <div class="slide">
+          <div class="circle-placeholder"></div>
+          <p>Team Member 4</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    // Typed.js animation for "role-assign"
+    var typeData = new Typed(".role-assign", {
+      strings: [
+        "Students",
+        "Developers",
+        "Coders",
+      ],
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1000,
+    });
+
+    // Custom typing effect for the .role span text ("Students")
+    const textElements = document.querySelectorAll(".role"); // Select both instances of .role
+    const text = "Students";
+    let index = 0;
+    let direction = 1; // 1 for forward, -1 for backward
+
+    function typeEffect() {
+      textElements.forEach(el => el.textContent = text.substring(0, index));
+
+      if (direction === 1) {
+        index++;
+        if (index > text.length) {
+          direction = -1;
+          setTimeout(typeEffect, 1000); // Pause for 1 second after typing
+          return;
+        }
+      } else {
+        index--;
+        if (index === 0) {
+          direction = 1;
+          setTimeout(typeEffect, 500); // Pause for 0.5 seconds after deleting
+          return;
+        }
+      }
+
+      const speed = direction === 1 ? 200 : 150;
+      setTimeout(typeEffect, speed);
+    }
+    typeEffect();
+
+    // Optional: Adding a class to trigger the sliding animation (CSS handles the rest)
+    const sliderTrack = document.querySelector('.slider-track');
+    sliderTrack.style.animation = 'slide-horizontal 20s linear infinite'; // Trigger sliding animation
+
+    const track = document.querySelector('.carousel-track');
+const slides = Array.from(track.children);
+const nextButton = document.querySelector('.carousel-button.next');
+const prevButton = document.querySelector('.carousel-button.prev');
+let currentIndex = 0;
+
+function updateCarousel() {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+}
+
+nextButton.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  updateCarousel();
+});
+
+window.addEventListener('resize', updateCarousel);
+
+  </script>
+</body>
+</html>
